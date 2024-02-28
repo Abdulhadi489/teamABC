@@ -36,8 +36,17 @@ def display_leaderboard(leaderboard):
     """
     #------------------------
     # Add your code here
+    leaderboard = {
+    "Name": "Arslan", "score": "100",
+    "Name": "Hadi", "Score": "90",
+    "Name": "Talha", "Score": "70"
+}
+
+
+    print(leaderboard)
+    print()
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    # raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
@@ -55,8 +64,16 @@ def save_score(player_name, score, file_path='scores.txt'):
     """
     #------------------------
     # Add your code here
+    file=open(file_path.txt, 'a') 
+    (f"{player_name}: {score}\n")
+    lst=["arslan","hadi","talha"]
+    player_name=str(input("enter the player name:"))
+    if player_name=="arslan"or player_name=="hadi" or player_name=="talha":
+        return "players verified"
+    else:
+        return "player not found"
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    # raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
@@ -141,20 +158,5 @@ def skip_question(allowed_skips):
 
 #---------------------------------------
 
-Employees = {
-    "001": {"Name": "Ali", "Grade": "A", "Cell_No": 1234, "City": "Lahore", "Salary": 120000},
-    "002": {"Name": "Akbar", "Grade": "B", "Cell_No": 2345, "City": "Karachi", "Salary": 130000},
-    "003": {"Name": "Anthoney", "Grade": "A", "Cell_No": 3456, "City": "Mumbai", "Salary": 110000},
-    "004": {"Name": "Seeta", "Grade": "C", "Cell_No": 4567, "City": "Dehli", "Salary": 160000},
-    "005": {"Name": "Geeta", "Grade": "B", "Cell_No": 5678, "City": "Sialkot", "Salary": 160000},
-    "006": {"Name": "Maria", "Grade": "A", "Cell_No": 6789, "City": "Lahore", "Salary": 120000},
-    "007": {"Name": "Karan", "Grade": "A", "Cell_No": 7980, "City": "Lahore", "Salary": 130000},
-    "008": {"Name": "Arjun", "Grade": "C", "Cell_No": 4321, "City": "Dehli", "Salary": 200000},
-    "009": {"Name": "Shaka", "Grade": "C", "Cell_No": 5432, "City": "Karachi", "Salary": 220000},
-    "010": {"Name": "Baji-Rao", "Grade": "B", "Cell_No": 6543, "City": "Mumbai", "Salary": 200000}
-}
 
-
-print(Employees)
-print()
 
